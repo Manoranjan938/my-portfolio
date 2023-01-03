@@ -3,8 +3,13 @@ import React, { useState } from "react";
 import "./Header.css";
 
 const Header = () => {
+  window.addEventListener("scroll", function () {
+    const header = this.document.querySelector(".header");
+    if (this.scrollY >= 80) header.classList.add("scroll-header");
+    else header.classList.remove("scroll-header");
+  });
 
-    const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
 
   return (
     <header className="header">
@@ -50,7 +55,10 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <i className="uil uil-times nav__close" onClick={() => setToggle(!toggle)}></i>
+          <i
+            className="uil uil-times nav__close"
+            onClick={() => setToggle(!toggle)}
+          ></i>
         </div>
         <div className="nav__toggle" onClick={() => setToggle(!toggle)}>
           <i className="uil uil-apps"></i>
