@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./Header.css";
 
@@ -14,45 +15,45 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="#" className="nav__logo">
+        <Link to="#" className="nav__logo">
           Manoranjan
-        </a>
+        </Link>
         <div className={toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__lists">
             <li className="nav__item">
-              <a href="#" className="nav__link active_link">
+              <Link to="#" className="nav__link active_link">
                 <i className="uil uil-estate nav__icon"></i> Home
-              </a>
+              </Link>
             </li>
 
             <li className="nav__item">
-              <a href="#" className="nav__link">
+              <Link to="#about" className="nav__link">
                 <i className="uil uil-user nav__icon"></i> About
-              </a>
+              </Link>
             </li>
 
             <li className="nav__item">
-              <a href="#" className="nav__link">
+              <Link to="#skills" className="nav__link">
                 <i className="uil uil-file-alt nav__icon"></i> Skills
-              </a>
+              </Link>
             </li>
 
-            <li className="nav__item">
-              <a href="#" className="nav__link">
+            {/* <li className="nav__item">
+              <Link to="#" className="nav__link">
                 <i className="uil uil-briefcase nav__icon"></i> Services
-              </a>
-            </li>
+              </Link>
+            </li> */}
 
             <li className="nav__item">
-              <a href="#" className="nav__link">
+              <Link to="#" className="nav__link">
                 <i className="uil uil-scenery nav__icon"></i> Portfolio
-              </a>
+              </Link>
             </li>
 
             <li className="nav__item">
-              <a href="#" className="nav__link">
+              <Link to="#contact" className="nav__link">
                 <i className="uil uil-message nav__icon"></i> Contact us
-              </a>
+              </Link>
             </li>
           </ul>
           <i
