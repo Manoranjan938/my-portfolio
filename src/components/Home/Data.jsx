@@ -57,8 +57,7 @@ const Data = () => {
       </h1>
       <h3 className="home__subtitle">Full-Stack Developer</h3>
       <p className="home__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quo
-        quam aut dolores id quae! Placeat quibusdam autem natus eum!
+        I am manoranjan sahoo lives in Barbil, Keonjhar, Odisha. I have 3+ years of working experience and I am very passionate, consistent and dedicated to my work.
       </p>
       <a href="#" className="button button--flex">
         Say Hello

@@ -45,14 +45,14 @@ const Header = () => {
             </li> */}
 
             <li className="nav__item">
-              <Link to="#" className="nav__link">
-                <i className="uil uil-scenery nav__icon"></i> Portfolio
+              <Link to="/projects" className="nav__link">
+                <i className="uil uil-scenery nav__icon"></i> Projects
               </Link>
             </li>
 
             <li className="nav__item">
               <Link to="#contact" className="nav__link">
-                <i className="uil uil-message nav__icon"></i> Contact us
+                <i className="uil uil-message nav__icon"></i> Contact me
               </Link>
             </li>
           </ul>

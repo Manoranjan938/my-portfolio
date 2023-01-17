@@ -1,3 +1,4 @@
+import Projects from "pages/Projects/Projects";
 import React from "react";
 import {
   createBrowserRouter,
@@ -13,7 +14,8 @@ const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
-        <Route index element={<HomePage />}></Route>
+        <Route index element={<HomePage />} />
+        <Route path="/projects" element={<Projects />} />
       </Route>
     )
   );

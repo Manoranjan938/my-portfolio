@@ -2,7 +2,7 @@ import React from "react";
 
 import "./About.css";
 import aboutImg from "../../assets/about.jpg";
-import cv from "../../assets/John-Cv.pdf";
+import cv from "../../assets/Manoranjan-Sahoo-Resume.pdf";
 import Info from "./Info";
 
 const About = () => {
@@ -18,10 +18,9 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
-            libero voluptas sunt facere itaque inventore alias suscipit!
-            Assumenda sit, ut ducimus mollitia doloribus quisquam quasi culpa
-            sint! Dolorum, sunt esse.
+            I am Manoranjan Sahoo having 3+ years of experience in web
+            development. Also I have successfully delivered 2 projects to my
+            clients.
           </p>
 
           <a download="" href={cv} className="button button--flex">
