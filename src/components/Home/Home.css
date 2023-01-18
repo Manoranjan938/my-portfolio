@@ -18,6 +18,7 @@
 .home_social-icon{
     font-size: 1.25rem;
     color: #333;
+    cursor: pointer;
 }
 
 .home_social-icon:hover{

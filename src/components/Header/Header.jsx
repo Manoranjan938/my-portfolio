@@ -15,13 +15,13 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <Link to="#" className="nav__logo">
+        <Link to="/" className="nav__logo">
           Manoranjan
         </Link>
         <div className={toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__lists">
             <li className="nav__item">
-              <Link to="#" className="nav__link active_link">
+              <Link to="/" className="nav__link active_link">
                 <i className="uil uil-estate nav__icon"></i> Home
               </Link>
             </li>
@@ -45,14 +45,14 @@ const Header = () => {
             </li> */}
 
             <li className="nav__item">
-              <Link to="#" className="nav__link">
-                <i className="uil uil-scenery nav__icon"></i> Portfolio
+              <Link to="/projects" className="nav__link">
+                <i className="uil uil-scenery nav__icon"></i> Projects
               </Link>
             </li>
 
             <li className="nav__item">
               <Link to="#contact" className="nav__link">
-                <i className="uil uil-message nav__icon"></i> Contact us
+                <i className="uil uil-message nav__icon"></i> Contact me
               </Link>
             </li>
           </ul>

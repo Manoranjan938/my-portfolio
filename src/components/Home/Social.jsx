@@ -1,32 +1,38 @@
 import React from "react";
 
 const Social = () => {
+  const handleRedirect = (type) => {
+    if (type === "github") {
+      window.location.href = "https://github.com/Manoranjan938";
+    }
+    if (type === "linkedin") {
+      window.location.href = "https://www.linkedin.com/in/manoranjan-sahoo/";
+    }
+    if (type === "twitter") {
+      window.location.href = "https://twitter.com/sagar_sahoo_";
+    }
+  };
+
   return (
     <div className="home__social">
-      <a
-        href="#"
+      <div
         className="home_social-icon"
-        target="_blank"
-        rel="noopener noreferrer"
+        onClick={() => handleRedirect("linkedin")}
       >
-        <i className="uil uil-instagram"></i>
-      </a>
-      <a
-        href="#"
+        <i className="uil uil-linkedin-alt"></i>
+      </div>
+      <div
         className="home_social-icon"
-        target="_blank"
-        rel="noopener noreferrer"
+        onClick={() => handleRedirect("twitter")}
       >
         <i className="uil uil-twitter"></i>
-      </a>
-      <a
-        href="#"
+      </div>
+      <div
         className="home_social-icon"
-        target="_blank"
-        rel="noopener noreferrer"
+        onClick={() => handleRedirect("github")}
       >
         <i className="uil uil-github-alt"></i>
-      </a>
+      </div>
     </div>
   );
 };

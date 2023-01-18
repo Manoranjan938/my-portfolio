@@ -100,6 +100,11 @@ img{
     color: #333;
 }
 
+.content__title{
+    font-size: var(--h2-font-size);
+    color: #333;
+}
+
 .section__subtitle{
     display: block;
     font-size: var(--small-font-size);
@@ -133,6 +138,17 @@ img{
     font-weight: var(--font-medium);
 }
 
+.small-button{
+    display: inline-block;
+    background-color: #333;
+    color: var(--container-color)!important;
+    padding: .3rem 1.2rem;
+    border-radius: .6rem;
+    font-weight: var(--font-medium);
+    align-items: center;
+    cursor: pointer;
+}
+
 .button:hover{
     background-color: rgb(32, 31, 31);
 }
@@ -144,6 +160,12 @@ img{
 .button--flex{
     display: inline-flex;
     align-items: center;
+}
+
+.btn-groups{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
 }
 
 /*=============== BREAKPOINTS ==================*/
