@@ -1,3 +1,4 @@
+import ProjectDetails from "pages/ProjectDetails/ProjectDetails";
 import Projects from "pages/Projects/Projects";
 import React from "react";
 import {
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/" element={<Root />}>
         <Route index element={<HomePage />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
       </Route>
     )
   );

@@ -100,6 +100,11 @@ img{
     color: #333;
 }
 
+.content__title{
+    font-size: var(--h2-font-size);
+    color: #333;
+}
+
 .section__subtitle{
     display: block;
     font-size: var(--small-font-size);
@@ -136,7 +141,7 @@ img{
 .small-button{
     display: inline-block;
     background-color: #333;
-    color: var(--container-color);
+    color: var(--container-color)!important;
     padding: .3rem 1.2rem;
     border-radius: .6rem;
     font-weight: var(--font-medium);

@@ -1,11 +1,13 @@
 import image from 'assets/users-default.png'
+import image1 from 'assets/PM-Project.png'
+import image2 from 'assets/Job-Makers-Project.png'
 
 export const projectData = [
     {
         id: 1,
         name: 'Project Management',
         category: '',
-        image: image,
+        image: image1,
         status: 'completed',
         type: 'Personal',
         url: '',
@@ -13,12 +15,12 @@ export const projectData = [
     },
     {
         id: 2,
-        name: 'Job Seeker',
+        name: 'Job Makers',
         category: '',
-        image: image,
+        image: image2,
         status: 'completed',
         type: 'Clients',
-        url: '',
+        url: 'http://93.188.161.139/',
         code: ''
     },
     {
