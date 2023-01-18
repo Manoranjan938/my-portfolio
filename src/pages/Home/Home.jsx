@@ -7,6 +7,7 @@ import React from "react";
 import ScrollUp from "components/ScrollUp/ScrollUp";
 import Skills from "components/Skills/Skills";
 import Testimonials from "components/Testimonials/Testimonials";
+import Work from "components/Work/Work";
 const HomePage = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const HomePage = () => {
         <About />
         <Skills />
         <Qualification />
+        <Work />
         <Testimonials />
         <Contact />
       </main>
