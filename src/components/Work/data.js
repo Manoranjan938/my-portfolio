@@ -25,11 +25,11 @@ export const projectData = [
     },
     {
         id: 3,
-        name: 'Online Examination',
+        name: 'Job Finder',
         category: '',
         image: image,
-        status: 'completed',
-        type: 'Clients',
+        status: 'working',
+        type: 'Personal',
         url: '',
         code: ''
     },
