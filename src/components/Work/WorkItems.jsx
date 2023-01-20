@@ -12,7 +12,7 @@ const WorkItems = ({ item }) => {
       <img src={item.image} alt="" className="work__image" />
       <h3 className="work__title">{item.name}</h3>
       <div className="btn-groups">
-        <Link to={`/project/${item.id}`}>
+        <Link to={`/project/${item.id}?projectId=${item.id}`}>
           <span className="small-button">Details</span>
         </Link>
         <span className="work__button" onClick={() => handleProjectRedirect(item.url)}>
