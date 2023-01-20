@@ -8,6 +8,9 @@ const ProjectAbout = () => {
         <span className="status completed">Completed</span>
         <span className="project__type personal">Personal Project</span>
       </div>
+      <div className="project__links">
+        <button className="small-button">Check Code</button>
+      </div>
       <div className="about__content">
         <ol type="a">
           <li>
@@ -29,7 +32,7 @@ const ProjectAbout = () => {
             that job.
           </li>
           <li>For UI i have used react js.</li>
-          <li>I have used spring boot for developing the api’s.</li>
+          <li>I have used spring boot for developing the api's.</li>
           <li>I have used PostgreSQL for database to store data.</li>
         </ol>
       </div>

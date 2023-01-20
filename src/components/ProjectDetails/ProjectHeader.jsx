@@ -32,13 +32,14 @@ const ProjectHeader = () => {
     <section className="slider">
       {imageSliders.map((slider, index) => {
         return (
-          <>
-            <div className={current === index ? "slide active" : "slide"} key={index}>
-              {index === current ? (
-                <img src={slider.image} alt="" className="image" />
-              ) : null}
-            </div>
-          </>
+          <div
+            className={current === index ? "slide active" : "slide"}
+            key={index}
+          >
+            {index === current ? (
+              <img src={slider.image} alt="" className="image" />
+            ) : null}
+          </div>
         );
       })}
     </section>
