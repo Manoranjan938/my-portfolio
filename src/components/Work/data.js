@@ -10,7 +10,7 @@ export const projectData = [
         image: image1,
         status: 'completed',
         type: 'Personal',
-        url: '',
+        url: 'http://manoranjan.link:3000',
         code: ''
     },
     {
