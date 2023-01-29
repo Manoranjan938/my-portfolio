@@ -1,10 +1,15 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import ProjectAbout from "./ProjectAbout";
 import ProjectImageGallery from "./ProjectImageGallery";
 import ProjectTechnology from "./ProjectTechnology";
 
 const Details = () => {
   const [tab, setTab] = useState(1);
+  let { search } = useLocation();
+
+  const query = new URLSearchParams(search);
+  const param = query.get("projectId");
 
   const handleActiveTab = (no) => {
     setTab(no);
@@ -38,9 +43,9 @@ const Details = () => {
           Extras
         </span>
       </div>
-      {tab === 1 ? <ProjectAbout /> : null}
+      {tab === 1 ? <ProjectAbout prId={param} /> : null}
       {tab === 2 ? <ProjectImageGallery /> : null}
-      {tab === 3 ? <ProjectTechnology /> : null}
+      {tab === 3 ? <ProjectTechnology prId={param} /> : null}
     </div>
   );
 };
