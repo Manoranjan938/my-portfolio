@@ -1,39 +1,26 @@
+import { abotData } from "components/Work/data/aboutData";
+import { projectData } from "components/Work/data/data";
 import React from "react";
 
-const ProjectAbout = () => {
+const ProjectAbout = ({ prId }) => {
+  const dt = projectData.filter((item) => (item.id == prId ? item : null));
+  const abt = abotData.filter((item) => (item.projectId == prId ? item : null));
   return (
     <section className="project__content__container">
-      <h2 className="content__title">Project Management</h2>
+      <h2 className="content__title">{dt[0].name}</h2>
       <div className="extras">
-        <span className="status completed">Completed</span>
-        <span className="project__type personal">Personal Project</span>
-      </div>
-      <div className="project__links">
-        <button className="small-button">Check Code</button>
+        <span className={`status ${abt[0].about.status}`}>
+          {abt[0].about.status}
+        </span>
+        <span className={`project__type ${abt[0].about.type}`}>
+          {abt[0].about.type} Project
+        </span>
       </div>
       <div className="about__content">
         <ol type="a">
-          <li>
-            It has 5 modules. i.e - Admin, Employee, Partner, Household,
-            Jobseeker.
-          </li>
-          <li>
-            In admin module, admin can check the all users details, post the
-            job, get the applied candidates for the specific job, search the
-            candidate by location, education, job type and skills.
-          </li>
-          <li>
-            Employee and Household module are the same, In this module user can
-            only search the candidate by location, education, job type and
-            skills.
-          </li>
-          <li>
-            In jobseeker module, jobseeker only search for jobs and apply for
-            that job.
-          </li>
-          <li>For UI i have used react js.</li>
-          <li>I have used spring boot for developing the api's.</li>
-          <li>I have used PostgreSQL for database to store data.</li>
+          {abt[0].about.description.map((it) => (
+            <li key={it.descId}>{it.desc}</li>
+          ))}
         </ol>
       </div>
     </section>

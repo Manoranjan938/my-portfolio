@@ -1,8 +1,9 @@
 .slider {
-    margin-top: 5.8rem;
+    margin-top: 5.2rem;
     position: relative;
     height: 400px;
     display: flex;
+    overflow: hidden!important;
 }
 
 .slide{
@@ -19,7 +20,7 @@
 .active{
     opacity: 1;
     transition-duration: 1s;
-    transform: scale(1.08);
+    transform: scale(1.1);
 }
 
 .details__container{
@@ -51,7 +52,7 @@
     background-color: var(--container-color);
     margin-top: 1.2rem;
     border-radius: 1rem;
-    padding: 0.6rem 1rem;
+    padding: 0.8rem 2rem;
 }
 
 .about__content{
@@ -64,7 +65,7 @@
 }
 
 .status, .project__type{
-    width: 150px;
+    width: 160px;
     height: 35px;
     border-radius: 20px;
     display: flex;
@@ -72,6 +73,7 @@
     align-items: center;
     color: #fff;
     margin-bottom: 8px;
+    text-transform: capitalize;
 }
 
 .completed{
