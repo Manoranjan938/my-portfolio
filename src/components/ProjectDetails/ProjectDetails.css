@@ -1,8 +1,9 @@
 .slider {
-    margin-top: 5.8rem;
+    margin-top: 5.2rem;
     position: relative;
     height: 400px;
     display: flex;
+    overflow: hidden!important;
 }
 
 .slide{
@@ -19,7 +20,7 @@
 .active{
     opacity: 1;
     transition-duration: 1s;
-    transform: scale(1.08);
+    transform: scale(1.1);
 }
 
 .details__container{
@@ -51,7 +52,7 @@
     background-color: var(--container-color);
     margin-top: 1.2rem;
     border-radius: 1rem;
-    padding: 0.6rem 1rem;
+    padding: 0.8rem 2rem;
 }
 
 .about__content{
@@ -64,7 +65,7 @@
 }
 
 .status, .project__type{
-    width: 150px;
+    width: 160px;
     height: 35px;
     border-radius: 20px;
     display: flex;
@@ -72,14 +73,52 @@
     align-items: center;
     color: #fff;
     margin-bottom: 8px;
+    text-transform: capitalize;
 }
 
 .completed{
     background-color: #48dd5c;
 }
 
+.working{
+    background-color: #ddb548;
+}
+
 .personal{
     background-color: #7d62f8;
+}
+
+.client{
+    background-color: #62f8cb;
+}
+
+.project__content__container{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.image__lists{
+    display: grid;
+    margin: 20px 0;
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.image__lists img{
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    border: 1px solid #333;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.tech__titles{
+    line-height: 2rem;
+}
+
+.tech__titles > span{
+    font-weight: var(--font-medium);
 }
 
 @media screen and (max-width:768px) {
